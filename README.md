@@ -40,7 +40,7 @@ Unknown stays unknown. A detected test file is not the same as a passing test ru
 
 ## Privacy and security
 
-The tool runs in the repository GitHub runner. It does not upload source code, use external telemetry, print secrets, or persist tokens. The token is only used for GitHub API calls when supplied by Actions. Use contents: read and actions: read; do not grant write permissions.
+The tool runs in the repository GitHub runner. It does not upload source code, use external telemetry, print secrets, or persist tokens. The token is only used for GitHub API calls when supplied by Actions. The action itself only needs contents: read and actions: read. This repository workflow additionally uses contents: write solely to commit the three generated evidence files; remove that commit step and use read-only permissions if artifacts should remain workflow-only.
 
 ## Self-validation
 
