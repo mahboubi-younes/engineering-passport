@@ -1,22 +1,31 @@
 name: Engineering Passport
 on:
+  workflow_dispatch:
   push:
     branches: [main, master]
-  workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   actions: read
 jobs:
   passport:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Generate evidence
-        uses: ./
+      - uses: mahboubi-younes/engineering-passport@main
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_STEP_SUMMARY: ${{ github.step_summary }}
+      - name: Commit generated evidence
+        shell: bash
+        run: |
+          git config user.name "engineering-passport[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add engineering-passport.json engineering-passport.md engineering-passport.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh engineering passport [skip ci]"
+            git push
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: engineering-passport
