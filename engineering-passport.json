@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T10:57:22.265Z",
+  "generatedAt": "2026-09-23T11:03:31.013Z",
   "repository": {
-    "name": "engineering-passport",
+    "name": "mahboubi-younes/engineering-passport",
     "description": ""
   },
   "technologies": [
@@ -27,7 +27,7 @@
     },
     "CI": {
       "status": "detected",
-      "detail": "1 workflow file(s) detected"
+      "detail": "Workflow run found; latest conclusion: in_progress"
     },
     "TESTS": {
       "status": "detected",
@@ -52,8 +52,25 @@
   },
   "github": {
     "api": {
+      "status": "verified",
+      "detail": "Repository metadata read from GitHub API"
+    },
+    "name": "mahboubi-younes/engineering-passport",
+    "description": "",
+    "defaultBranch": "main",
+    "pages": {
       "status": "unknown",
-      "detail": "GitHub API unavailable outside Actions"
+      "detail": "GitHub Pages not detected"
+    },
+    "workflows": {
+      "status": "detected",
+      "detail": "Workflow run found; latest conclusion: in_progress"
+    },
+    "latestRun": {
+      "name": "Engineering Passport",
+      "status": "in_progress",
+      "conclusion": null,
+      "updatedAt": "2026-09-23T11:03:28Z"
     }
   },
   "files": {
