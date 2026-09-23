@@ -1,21 +1,23 @@
 # Engineering Passport
 
+![Engineering Passport](./engineering-passport.svg)
+
 Repository: mahboubi-younes/engineering-passport
 
 Evidence-first report. This is not a quality score or ranking.
 
 ## Evidence
 
-- **README**"��y��y� DETECTED"��y��y� README.md detected
-- **LICENSE**"��y��y� DETECTED"��y��y� License file detected
-- **SOURCE**"��y��y� UNKNOWN"��y��y� Not detected
-- **BUILD**"��y��y� UNKNOWN"��y��y� Not detected
-- **CI**"��y��y� DETECTED"��y��y� Workflow run found; latest conclusion: in_progress
-- **TESTS**"��y��y� DETECTED"��y��y� 1 test file(s) detected; current pass status unknown
-- **DEPLOYMENT**"��y��y� UNKNOWN"��y��y� Deployment evidence not detected
-- **DOCUMENTATION**"��y��y� DETECTED"��y��y� Documentation sections or docs directory detected
-- **ASSETS**"��y��y� UNKNOWN"��y��y� Screenshots/assets not detected
-- **LIVE DEMO**"��y��y� UNKNOWN"��y��y� Live demo URL not detected
+- **README** | DETECTED | README.md detected
+- **LICENSE** | DETECTED | License file detected
+- **SOURCE** | UNKNOWN | Not detected
+- **BUILD** | UNKNOWN | Not detected
+- **CI** | DETECTED | Workflow run found; latest conclusion: in_progress
+- **TESTS** | DETECTED | 1 test file(s) detected; current pass status unknown
+- **DEPLOYMENT** | UNKNOWN | Deployment evidence not detected
+- **DOCUMENTATION** | DETECTED | Documentation sections or docs directory detected
+- **ASSETS** | UNKNOWN | Screenshots/assets not detected
+- **LIVE DEMO** | UNKNOWN | Live demo URL not detected
 
 ## Technologies
 
