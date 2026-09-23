@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T12:00:33.480Z",
+  "generatedAt": "2026-09-23T12:12:54.324Z",
   "repository": {
     "name": "mahboubi-younes/engineering-passport",
     "description": "Evidence-first GitHub Action that reports what a repository can actually prove."
@@ -18,20 +18,20 @@
       "detail": "License file detected"
     },
     "SOURCE": {
-      "status": "unknown",
-      "detail": "Not detected"
+      "status": "detected",
+      "detail": "Source files detected"
     },
     "BUILD": {
       "status": "unknown",
       "detail": "Not detected"
     },
     "CI": {
-      "status": "detected",
-      "detail": "Workflow run found; latest conclusion: in_progress"
+      "status": "unknown",
+      "detail": "No non-Passport GitHub Actions workflow detected"
     },
     "TESTS": {
       "status": "detected",
-      "detail": "1 test file(s) detected; current pass status unknown"
+      "detail": "1 test file(s) detected; passing execution not verified"
     },
     "DEPLOYMENT": {
       "status": "unknown",
@@ -47,7 +47,7 @@
     },
     "LIVE DEMO": {
       "status": "unknown",
-      "detail": "Live demo URL not detected"
+      "detail": "Live demo link not detected in README"
     }
   },
   "github": {
@@ -63,15 +63,10 @@
       "detail": "GitHub Pages not detected"
     },
     "workflows": {
-      "status": "detected",
-      "detail": "Workflow run found; latest conclusion: in_progress"
+      "status": "unknown",
+      "detail": "No non-Passport workflow runs available"
     },
-    "latestRun": {
-      "name": "Engineering Passport",
-      "status": "in_progress",
-      "conclusion": null,
-      "updatedAt": "2026-09-23T12:00:31Z"
-    }
+    "latestRun": null
   },
   "files": {
     "workflows": [
