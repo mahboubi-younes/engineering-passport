@@ -96,7 +96,7 @@ async function githubEvidence() {
   const currentRunId = process.env.GITHUB_RUN_ID ? Number(process.env.GITHUB_RUN_ID) : null;
   const runs = Array.isArray(runsData?.workflow_runs) ? runsData.workflow_runs : [];
   const latestNonPassport = runs
-    .filter((run) => run.id !== currentRunId && !/^engineering passport$/i.test(String(run.name || '')))[0] || null;
+    .filter((run) => run.id !== currentRunId && !/^engineering passport$/i.test(String(run.name || '')) && run.status === 'completed')[0] || null;
 
   return {
     api: meta ? verified('Repository metadata read from GitHub API') : unknown('Repository metadata unavailable'),
