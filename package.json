@@ -1,0 +1,1 @@
+{"name":"engineering-passport","version":"0.1.0","private":false,"description":"Evidence-first repository passport for GitHub projects.","type":"module","bin":{"engineering-passport":"./bin/generate-passport.mjs"},"scripts":{"generate":"node bin/generate-passport.mjs","test":"node --test"}}

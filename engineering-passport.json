@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-23T10:57:22.265Z",
+  "repository": {
+    "name": "engineering-passport",
+    "description": ""
+  },
+  "technologies": [
+    "JavaScript"
+  ],
+  "evidence": {
+    "README": {
+      "status": "detected",
+      "detail": "README.md detected"
+    },
+    "LICENSE": {
+      "status": "detected",
+      "detail": "License file detected"
+    },
+    "SOURCE": {
+      "status": "unknown",
+      "detail": "Not detected"
+    },
+    "BUILD": {
+      "status": "unknown",
+      "detail": "Not detected"
+    },
+    "CI": {
+      "status": "detected",
+      "detail": "1 workflow file(s) detected"
+    },
+    "TESTS": {
+      "status": "detected",
+      "detail": "1 test file(s) detected; current pass status unknown"
+    },
+    "DEPLOYMENT": {
+      "status": "unknown",
+      "detail": "Deployment evidence not detected"
+    },
+    "DOCUMENTATION": {
+      "status": "detected",
+      "detail": "Documentation sections or docs directory detected"
+    },
+    "ASSETS": {
+      "status": "unknown",
+      "detail": "Screenshots/assets not detected"
+    },
+    "LIVE DEMO": {
+      "status": "unknown",
+      "detail": "Live demo URL not detected"
+    }
+  },
+  "github": {
+    "api": {
+      "status": "unknown",
+      "detail": "GitHub API unavailable outside Actions"
+    }
+  },
+  "files": {
+    "workflows": [
+      ".github/workflows/engineering-passport.yml"
+    ],
+    "tests": [
+      "test/passport.test.mjs"
+    ],
+    "docs": [],
+    "assets": []
+  }
+}

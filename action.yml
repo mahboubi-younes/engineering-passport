@@ -1,0 +1,17 @@
+name: Engineering Passport
+description: Generate evidence-first JSON, Markdown and SVG artifacts for a repository.
+inputs:
+  output:
+    description: Output directory for generated artifacts
+    required: false
+    default: .
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      env:
+        PASSPORT_OUTPUT: ${{ inputs.output }}
+      run: node ${{ github.action_path }}/action/index.mjs
+branding:
+  icon: shield
+  color: green

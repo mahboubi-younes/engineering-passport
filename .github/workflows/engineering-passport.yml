@@ -1,0 +1,26 @@
+name: Engineering Passport
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  passport:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate evidence
+        uses: ./
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_STEP_SUMMARY: ${{ github.step_summary }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: engineering-passport
+          path: |
+            engineering-passport.json
+            engineering-passport.md
+            engineering-passport.svg
